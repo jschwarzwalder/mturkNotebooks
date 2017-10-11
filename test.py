@@ -28,7 +28,7 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 # The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
 # To call the prod sentiment-analysis function, uncomment the next line and comment out the sentiment-analysis-test line
 # function_name = 'sentiment-analysis'
-function_name = 'image-similarity-test'
+function_name = 'image-similarity'
 
 
 # Create the task
