@@ -42,7 +42,7 @@ Semantic Similarity https://medium.com/@mechanicalturk/determine-whether-two-phr
  Text Language Detection https://medium.com/@mechanicalturk/determine-which-language-a-piece-of-text-is-written-using-our-preview-api-197bc06dd650
  Text Relevance https://medium.com/@mechanicalturk/determine-whether-a-text-is-relevant-using-our-preview-api-6add059356f3 
  Text Categorization https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
- Conversational Agent (Chatbot) Training  https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
+ -- Conversational Agent (Chatbot) Training  https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
  Image Similarity https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
 Bounding Box Labeling* https://medium.com/@mechanicalturk/determine-bounding-boxes-for-images-using-our-preview-api-58ba374ea14b
 Named Entity Recognition* https://medium.com/@mechanicalturk/determine-entities-in-some-text-using-our-preview-api-50ea789aa548
