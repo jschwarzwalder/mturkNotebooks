@@ -36,16 +36,110 @@ https://console.aws.amazon.com/iam/home?region=us-east-1#/users/mturk-crowd-call
 
 Wiki how to https://w.amazon.com/bin/view/MTurk_Preview_API/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 NEW DOCUMENTATION
-Semantic Similarity https://medium.com/@mechanicalturk/determine-whether-two-phrases-are-similar-something-using-our-preview-api-dca5eba89312
- Translation Similarity https://medium.com/@mechanicalturk/determine-whether-a-translation-is-accurate-using-our-preview-api-2137c529d906
- Text Language Detection https://medium.com/@mechanicalturk/determine-which-language-a-piece-of-text-is-written-using-our-preview-api-197bc06dd650
- Text Relevance https://medium.com/@mechanicalturk/determine-whether-a-text-is-relevant-using-our-preview-api-6add059356f3 
- Text Categorization https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
- Conversational Agent (Chatbot) Training  https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
- Image Similarity https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
+-- emotion-detection https://medium.com/@mechanicalturk/determine-the-emotion-of-text-using-our-preview-api-6384b68f6a4c
+-- image-contains https://medium.com/@mechanicalturk/determine-whether-an-image-contains-something-using-our-preview-api-c2662d69f25b
+-- semantic-similarity https://medium.com/@mechanicalturk/determine-whether-two-phrases-are-similar-something-using-our-preview-api-dca5eba89312
+-- sentiment-analysis https://medium.com/@mechanicalturk/determine-the-sentiment-analysis-of-text-using-our-preview-api-18bd5b2dba01
+
+--IN Review--
+Image Categorization*  https://medium.com/@mechanicalturk/determine-which-category-an-image-belongs-using-our-preview-api-54cf453b668b
+collect-text-utterance  https://medium.com/@mechanicalturk/determine-a-phrase-or-intent-from-a-context-using-our-preview-api-ab5be0d133d4
+
+
+-- Pending --
+Image Similarity https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
+Conversational Agent (Chatbot) Training  https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
+
+
 Bounding Box Labeling* https://medium.com/@mechanicalturk/determine-bounding-boxes-for-images-using-our-preview-api-58ba374ea14b
 Named Entity Recognition* https://medium.com/@mechanicalturk/determine-entities-in-some-text-using-our-preview-api-50ea789aa548
 Key Phrase Extraction* https://medium.com/@mechanicalturk/determine-whether-key-phrases-appear-in-a-text-using-our-preview-api-7a84ee152b03
-Image Categorization*  https://medium.com/@mechanicalturk/determine-which-category-an-image-belongs-using-our-preview-api-54cf453b668b
+co-reference-resolution https://medium.com/@mechanicalturk/determine-co-reference-resolution-using-our-preview-api-6a9cbcc7169b
+Text Categorization https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
+
+
+-- On Hold -- 
+
+ Translation Similarity https://medium.com/@mechanicalturk/determine-whether-a-translation-is-accurate-using-our-preview-api-2137c529d906
+ Text Language Detection https://medium.com/@mechanicalturk/determine-which-language-a-piece-of-text-is-written-using-our-preview-api-197bc06dd650
+ Text Relevance https://medium.com/@mechanicalturk/determine-whether-a-text-is-relevant-using-our-preview-api-6add059356f3 
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+XXXXX WIP XXXXX
+
+bounding-box https://medium.com/@mechanicalturk/determine-where-an-object-is-located-inside-an-image-using-our-preview-api-285f8d049c08
+named-entity-recognition https://medium.com/@mechanicalturk/determine-entities-in-some-text-using-our-preview-api-50ea789aa548
+key-phrase-extraction	https://medium.com/@mechanicalturk/determine-whether-key-phrases-appear-in-a-text-using-our-preview-api-7a84ee152b03
+co-reference-resolution https://medium.com/@mechanicalturk/determine-co-reference-resolution-using-our-preview-api-6a9cbcc7169b
+text-categorization		https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
+
+Code - image-similarity		https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
+Code - text-intent-detection https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
+
+
+XXXXX DONE XXXXX
+
+image-categorization	https://medium.com/@mechanicalturk/determine-which-category-an-image-belongs-using-our-preview-api-54cf453b668b
+collect-text-utterance https://medium.com/@mechanicalturk/determine-a-phrase-or-intent-from-a-context-using-our-preview-api-ab5be0d133d4
+
+Sentiment Analysis  https://medium.com/@mechanicalturk/determine-the-sentiment-analysis-of-text-using-our-preview-api-18bd5b2dba01
+Image Contains  	https://medium.com/@mechanicalturk/determine-whether-an-image-contains-something-using-our-preview-api-c2662d69f25b
+Emotion Detection  https://medium.com/@mechanicalturk/determine-the-emotion-of-text-using-our-preview-api-6384b68f6a4c
+Sentiment Analysis https://medium.com/@mechanicalturk/determine-the-sentiment-analysis-of-text-using-our-preview-api-18bd5b2dba01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
