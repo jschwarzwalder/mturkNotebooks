@@ -26,11 +26,13 @@ function_name = 'text-categorization-test'
 text = 'Banana'
 
 # and an  intention, for worker to select.
-categories = [{'label': 'Protein'},
-            {'label': 'Fruit'},
-            {'label': 'Vegetable'},
-            {'label': 'Dairy'},
-            {'label': 'Grain'} ]          
+# Descriptions are optional, but help guide the worker
+categories = [{'label': 'Protein' , 'description' : 'Animal based but also includes eggs, soy, beans, and legumes.'},
+            {'label': 'Fruit', 'description': 'Grow on trees or plants and often high in sugary carbohydrates.' },
+            {'label': 'Vegetable', 'description': 'Grown in the ground or on a plant including the roots or leaves.'},
+            {'label': 'Dairy', 'description': 'Milk based products'},
+            {'label': 'Grain', 'description': 'Carbohydrates including wheat, rice, oats, barley, bread, and pasta'} ]
+
 
 
 
