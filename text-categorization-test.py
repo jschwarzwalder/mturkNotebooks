@@ -30,7 +30,7 @@ task_name = 'my-test-task-' + function_name
 ##################################################################################################################################################################
 # The text we want to compare
 text = 'Banana'
-categories = [ {'name': 'Protein'},  {'name':'Fruit'},  {'name':'Vegetable'},  {'name':'Dairy'},  {'name':'Grain'}] # An array of categories
+categories = [ {'label': 'Protein'},  {'label':'Fruit'},  {'label':'Vegetable'},  {'label':'Dairy'},  {'label':'Grain'}] # An array of categories
 
 
 # Create the task
