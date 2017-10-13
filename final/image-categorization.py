@@ -37,11 +37,11 @@ description5 =  'unicellular eukayotic organisms that often cluster together.'
 put_result = crowd_client.put_task(function_name,
                                    task_name,
                                    {'image': {'url': image_url},
-                                   'categories': [ {'label': label1,  "description":  description1 },
-                                                   {'label': label2,  "description":  description2 },
-                                                   {'label': label3,  "description":  description3 },
-                                                   {'label': label4,  "description":  description4 },
-                                                   {'label': label5,  "description":  description5 }] })
+                                   'categories': [ {'label': label1,  'description':  description1 },
+                                                   {'label': label2,  'description':  description2 },
+                                                   {'label': label3,  'description':  description3 },
+                                                   {'label': label4,  'description':  description4 },
+                                                   {'label': label5,  'description':  description5 }] })
 
 
 print('PUT response: {}'.format(
