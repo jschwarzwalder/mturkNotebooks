@@ -12,13 +12,26 @@ crowd_client = MTurkCrowdClient(session)
 
 # For this example, we'll give our task a random, unique name. For prod
 # tasks, you'll probably want to pick a name based on your input source.
-task_name = 'my-test-task-2c28dbb029f4400a8d90219b3909d7da'
+
 
 # Next, we specify the name of the function to call
 function_name = 'image-similarity'
 
 
-task_name = 'my-test-task-27f7a6f1052540dd8e4a29298f5d8967'
+task_name = 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a'
+
+# Get the task we just created. Note that for a prod (i.e., non-test) task,
+# we'd have to poll periodically until the task completed.
+get_result = crowd_client.get_task(function_name, task_name)
+
+print('GET response: {}'.format(
+{'status_code': get_result.status_code, 'name': function_name, 'task': get_result.json()}))
+
+# Next, we specify the name of the function to call
+function_name = 'image-similarity'
+
+
+task_name = 'my-test-task-93bf495576eb48378e656d098c2f421f'
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
@@ -46,7 +59,22 @@ print('GET response: {}'.format(
 function_name = 'text-categorization'
 
 
-task_name = 'my-test-task-58a07ec626ee492b93a679e5cad79a2d'
+task_name = 'my-test-task-1c040e329ee44f90b40f056ed0e65cd9'
+
+# Get the task we just created. Note that for a prod (i.e., non-test) task,
+# we'd have to poll periodically until the task completed.
+get_result = crowd_client.get_task(function_name, task_name)
+
+print('GET response: {}'.format(
+{'status_code': get_result.status_code, 'name': function_name, 'task': get_result.json()}))
+
+
+
+function_name = 'named-entity-recognition'
+
+
+task_name = 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a
+'
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
