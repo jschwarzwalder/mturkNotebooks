@@ -18,7 +18,7 @@ crowd_client = MTurkCrowdClient(session)
 function_name = 'image-similarity'
 
 
-task_name = 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a'
+task_name = 'my-test-task-f225593f2a5e4571a1d2c924ce56dc23'
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
@@ -73,8 +73,7 @@ print('GET response: {}'.format(
 function_name = 'named-entity-recognition'
 
 
-task_name = 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a
-'
+task_name = 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a'
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
