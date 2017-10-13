@@ -15,11 +15,7 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-# In this example, we're first calling the text-categorization-test function.
-# The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
-# To call the prod text-categorization function, uncomment the next line and comment out the text-categorization-test line
-# function_name = 'text-categorization'
-function_name = 'text-categorization-test'
+function_name = 'text-categorization'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
@@ -30,7 +26,7 @@ categories = [{'label': 'Protein'},
             {'label': 'Fruit'},
             {'label': 'Vegetable'},
             {'label': 'Dairy'},
-            {'label': 'Grain'} ]          
+            {'label': 'Grain'} ]
 
 
 
