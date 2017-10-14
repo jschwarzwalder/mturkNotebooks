@@ -1,6 +1,7 @@
 from mturk_crowd_beta_client import MTurkCrowdClient
 from boto3.session import Session
 import uuid
+import csv
 
 # This examples assume you have a local AWS profile called
 # 'mturk-crowd-caller', but you can authenticate however you like,
@@ -17,8 +18,6 @@ crowd_client = MTurkCrowdClient(session)
 # Next, we specify the name of the function to call
 
 list = [['named-entity-recognition', 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a'],]
-list.append(['image-similarity', 'my-test-task-93bf495576eb48378e656d098c2f421f'])
-list.append(['image-similarity', 'my-test-task-3e091891453b45738e16df1379dd4ed6'])
 list.append(['named-entity-recognition', 'customer_review_1'])
 list.append(['named-entity-recognition', 'customer_review_2'])
 list.append(['named-entity-recognition', 'customer_review_3'])
@@ -30,6 +29,18 @@ list.append(['named-entity-recognition', 'customer_review_8'])
 list.append(['named-entity-recognition', 'customer_review_9'])
 list.append(['named-entity-recognition', 'customer_review_10'])
 
+
+
+
+with open('image-categorization-inputs.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+        task_name = row[0]
+        get_result = crowd_client.get_task('image-categorization', task_name)
+
+        print('GET response: {}'.format(
+            {'status_code': get_result.status_code, 'api_name': 'image-categorization', 'task': get_result.json()}))
 
 for row in list:
     function_name = row[0]
