@@ -22,8 +22,8 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 function_name = 'image-similarity-test'
 
 # The text we want to compare
-image1 = 'https://cdn.pixabay.com/photo/2017/09/18/14/49/egg-sandwich-2761894_960_720.jpg'
-image2 = 'https://cdn.pixabay.com/photo/2017/08/30/04/23/food-2695883_960_720.jpg'
+image1 = 'https://requester.mturk.com/assets/lucy.jpg'
+image2 = 'https://requester.mturk.com/assets/gold-finding-puppy.jpg'
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
