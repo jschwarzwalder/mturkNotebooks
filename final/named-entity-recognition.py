@@ -19,7 +19,7 @@ function_name = 'named-entity-recognition'
 
 # We ask the worker to label the entities in some some text
 # (companies, events, locations, organizations, people, quantities)
-text = 'Android/Windows guy... Your statement completely undermines the concept of "user experience." Apple advanced UX by decades.'
+text = 'The Grammys nominated The Chainsmokers for Best New Artist for simply repeating "We ain\'t ever gettin older"'
 
 
 # Create the task
