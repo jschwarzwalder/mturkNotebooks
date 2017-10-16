@@ -15,7 +15,7 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-function_name = 'key-phrase-extraction' 
+function_name = 'key-phrase-extraction'
 
 # We ask the worker to label the entities in some some text
 # (companies, events, locations, organizations, people, quantities)

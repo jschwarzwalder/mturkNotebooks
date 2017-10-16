@@ -17,7 +17,7 @@ crowd_client = MTurkCrowdClient(session)
 
 # Next, we specify the name of the function to call
 
-list = [['named-entity-recognition', 'my-test-task-359b74a52b5e4446a7feb2ab4d97fd1a'],]
+list = [['named-entity-recognition', 'my-test-task-cb474a8ca9644723aa8e04b42cabd7c6'],]
 list.append(['named-entity-recognition', 'customer_review_1'])
 list.append(['named-entity-recognition', 'customer_review_2'])
 list.append(['named-entity-recognition', 'customer_review_3'])
@@ -28,6 +28,10 @@ list.append(['named-entity-recognition', 'customer_review_7'])
 list.append(['named-entity-recognition', 'customer_review_8'])
 list.append(['named-entity-recognition', 'customer_review_9'])
 list.append(['named-entity-recognition', 'customer_review_10'])
+list.append(['key-phrase-extraction', 'my-test-task-03dfb493926d4819a60ab3ceb049e563'])
+list.append(['key-phrase-extraction', 'my-test-task-aadf2fa9bbfb423b91d4d6a7c00edb3d'])
+list.append(['key-phrase-extraction', 'my-test-task-31c1ec8ae99a49079c850f74f643e589'])
+list.append(['co-reference-resolution','my-test-task-8a85fbad667344f9bb78aa79c36f060f'])
 
 
 
@@ -35,12 +39,13 @@ list.append(['named-entity-recognition', 'customer_review_10'])
 with open('image-categorization-inputs.csv') as f:
     reader = csv.reader(f)
     for row in reader:
-        print(row)
+        #print("")
+        #print(row)
         task_name = row[0]
-        get_result = crowd_client.get_task('image-categorization', task_name)
+#        get_result = crowd_client.get_task('image-categorization', task_name)
 
-        print('GET response: {}'.format(
-            {'status_code': get_result.status_code, 'api_name': 'image-categorization', 'task': get_result.json()}))
+#        print('GET response: {}'.format(
+#            {'status_code': get_result.status_code, 'api_name': 'image-categorization', 'task': get_result.json()}))
 
 for row in list:
     function_name = row[0]
