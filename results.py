@@ -40,10 +40,9 @@ with open('collect-text-utterance-inputs.csv') as f:
         # print("")
         # print(row)
         task_name = row[0]
-        get_result = crowd_client.get_task('collect-utterance-text', task_name)
+        list.append(['collect-utterance-text', task_name])
 
-        print('GET response: {}'.format(
-            {'status_code': get_result.status_code, 'api_name': 'collect-utterance-text', 'task': get_result.json()}))
+
 
 for row in list:
     function_name = row[0]
