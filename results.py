@@ -17,7 +17,7 @@ crowd_client = MTurkCrowdClient(session)
 
 # Next, we specify the name of the function to call
 
-list = [['named-entity-recognition', 'my-test-task-cb474a8ca9644723aa8e04b42cabd7c6'],]
+list = []
 
 list.append(['co-reference-resolution','my-test-task-a8b19a88f51143a08726e9774e882bf1'])
 list.append(['collect-utterance-text','say_something_1'])
@@ -34,16 +34,16 @@ list.append(['collect-utterance-text','say_something_10'])
 
 
 
-# with open('shoe_with_heel.csv') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         print("")
-#         print(row)
-#         task_name = row[0]
-#         get_result = crowd_client.get_task('image-contains', task_name)
-#
-#         print('GET response: {}'.format(
-#             {'status_code': get_result.status_code, 'api_name': 'image-categorization', 'task': get_result.json()}))
+with open('collect-text-utterance-inputs.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        get_result = crowd_client.get_task('collect-utterance-text', task_name)
+
+        print('GET response: {}'.format(
+            {'status_code': get_result.status_code, 'api_name': 'collect-utterance-text', 'task': get_result.json()}))
 
 for row in list:
     function_name = row[0]
