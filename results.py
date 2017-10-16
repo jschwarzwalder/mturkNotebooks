@@ -20,29 +20,38 @@ crowd_client = MTurkCrowdClient(session)
 list = []
 
 list.append(['co-reference-resolution','my-test-task-a8b19a88f51143a08726e9774e882bf1'])
-list.append(['collect-utterance-text','say_something_1'])
-list.append(['collect-utterance-text','say_something_2'])
-list.append(['collect-utterance-text','say_something_3'])
-list.append(['collect-utterance-text','say_something_4'])
-list.append(['collect-utterance-text','say_something_5'])
-list.append(['collect-utterance-text','say_something_6'])
-list.append(['collect-utterance-text','say_something_7'])
-list.append(['collect-utterance-text','say_something_8'])
-list.append(['collect-utterance-text','say_something_9'])
-list.append(['collect-utterance-text','say_something_10'])
+list.append('key-phrase-extraction', 'customer_review_1k')
+list.append('key-phrase-extraction', 'customer_review_2k')
+list.append('key-phrase-extraction', 'customer_review_3k')
+list.append('key-phrase-extraction', 'customer_review_4k')
+list.append('key-phrase-extraction', 'customer_review_5k')
+list.append('key-phrase-extraction', 'customer_review_6k')
+list.append('key-phrase-extraction', 'customer_review_7k')
+list.append('key-phrase-extraction', 'customer_review_8k')
+list.append('key-phrase-extraction', 'customer_review_9k')
+list.append('key-phrase-extraction', 'customer_review_10k')
+list.append('named-entity-recognition', 'customer_review_1a')
+list.append('named-entity-recognition', 'customer_review_2a')
+list.append('named-entity-recognition', 'customer_review_3a')
+list.append('named-entity-recognition', 'customer_review_4a')
+list.append('named-entity-recognition', 'customer_review_5a')
+list.append('named-entity-recognition', 'customer_review_6a')
+list.append('named-entity-recognition', 'customer_review_7a')
+list.append('named-entity-recognition', 'customer_review_8a')
+list.append('named-entity-recognition', 'customer_review_9a')
+list.append('named-entity-recognition', 'customer_review_10a')
 
 
 
-
-with open('collect-text-utterance-inputs.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['collect-utterance-text', task_name])
-
-
+# with open('collect-text-utterance-inputs.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['collect-utterance-text', task_name])
+#
+#
 
 for row in list:
     function_name = row[0]
