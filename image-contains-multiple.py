@@ -16,7 +16,7 @@ function_name = 'image-contains'
 with open('shoe_with_heel.csv') as f:
     reader = csv.reader(f)
     for row in reader:
-        print(row)
+        #print(row)
         task_name = row[0]
         image_url = row[1]
 
