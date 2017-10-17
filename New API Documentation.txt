@@ -95,28 +95,28 @@ Text Categorization https://medium.com/@mechanicalturk/categorize-text-using-our
 
 
 
-
+XXX Staged XXX
+facial-detection https://medium.com/@mechanicalturk/detect-faces-in-an-image-using-our-preview-api-a754db9aebed
+logo-detection https://medium.com/@mechanicalturk/detect-a-logo-in-an-image-using-our-preview-api-dfe79b6fbc33
+text-recognition https://medium.com/@mechanicalturk/determine-objects-in-an-image-using-our-preview-api-ef77041e59a6
 
 
 XXXXX WIP XXXXX
-
 bounding-box https://medium.com/@mechanicalturk/determine-where-an-object-is-located-inside-an-image-using-our-preview-api-285f8d049c08
-named-entity-recognition https://medium.com/@mechanicalturk/determine-entities-in-some-text-using-our-preview-api-50ea789aa548
-key-phrase-extraction	https://medium.com/@mechanicalturk/determine-whether-key-phrases-appear-in-a-text-using-our-preview-api-7a84ee152b03
 co-reference-resolution https://medium.com/@mechanicalturk/determine-co-reference-resolution-using-our-preview-api-6a9cbcc7169b
 
 
-Screenshots
-Code - image-similarity		https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
-Code - text-intent-detection https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
-Code - text-categorization		https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
+XXXXX NEEDS REVIEWED XXXXX
+image-categorization	https://medium.com/@mechanicalturk/determine-which-category-an-image-belongs-using-our-preview-api-54cf453b668b
+collect-text-utterance https://medium.com/@mechanicalturk/determine-a-phrase-or-intent-from-a-context-using-our-preview-api-ab5be0d133d4
+text-categorization		https://medium.com/@mechanicalturk/categorize-text-using-our-preview-api-7072fbe0af35
+image-similarity		https://medium.com/@mechanicalturk/determine-whether-two-images-are-similar-using-our-preview-api-b45409fd2719
+text-intent-detection https://medium.com/@mechanicalturk/determine-the-intent-of-a-piece-of-text-using-our-preview-api-bd725969fb08
+key-phrase-extraction	https://medium.com/@mechanicalturk/determine-whether-key-phrases-appear-in-a-text-using-our-preview-api-7a84ee152b03
+named-entity-recognition https://medium.com/@mechanicalturk/determine-entities-in-some-text-using-our-preview-api-50ea789aa548
 
 
 XXXXX DONE XXXXX
-
-image-categorization	https://medium.com/@mechanicalturk/determine-which-category-an-image-belongs-using-our-preview-api-54cf453b668b
-collect-text-utterance https://medium.com/@mechanicalturk/determine-a-phrase-or-intent-from-a-context-using-our-preview-api-ab5be0d133d4
-
 Sentiment Analysis  https://medium.com/@mechanicalturk/determine-the-sentiment-analysis-of-text-using-our-preview-api-18bd5b2dba01
 Image Contains  	https://medium.com/@mechanicalturk/determine-whether-an-image-contains-something-using-our-preview-api-c2662d69f25b
 Emotion Detection  https://medium.com/@mechanicalturk/determine-the-emotion-of-text-using-our-preview-api-6384b68f6a4c
