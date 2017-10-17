@@ -97,6 +97,7 @@ Text Categorization https://medium.com/@mechanicalturk/categorize-text-using-our
 
 XXX Staged XXX
 facial-detection https://medium.com/@mechanicalturk/detect-faces-in-an-image-using-our-preview-api-a754db9aebed
+logo-detection https://medium.com/@mechanicalturk/detect-a-logo-in-an-image-using-our-preview-api-dfe79b6fbc33
 
 
 XXXXX WIP XXXXX
