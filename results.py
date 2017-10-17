@@ -19,41 +19,50 @@ crowd_client = MTurkCrowdClient(session)
 
 list = []
 
-list.append(['co-reference-resolution','my-test-task-a8b19a88f51143a08726e9774e882bf1'])
-list.append(['key-phrase-extraction', 'customer_review_1k'])
-list.append(['key-phrase-extraction', 'customer_review_2k'])
-list.append(['key-phrase-extraction', 'customer_review_3k'])
-list.append(['key-phrase-extraction', 'customer_review_4k'])
-list.append(['key-phrase-extraction', 'customer_review_5k'])
-list.append(['key-phrase-extraction', 'customer_review_6k'])
-list.append(['key-phrase-extraction', 'customer_review_7k'])
-list.append(['key-phrase-extraction', 'customer_review_8k'])
-list.append(['key-phrase-extraction', 'customer_review_9k'])
-list.append(['key-phrase-extraction', 'customer_review_10k'])
-list.append(['named-entity-recognition', 'customer_review_1a'])
-list.append(['named-entity-recognition', 'customer_review_2a'])
-list.append(['named-entity-recognition', 'customer_review_3a'])
-list.append(['named-entity-recognition', 'customer_review_4a'])
-list.append(['named-entity-recognition', 'customer_review_5a'])
-list.append(['named-entity-recognition', 'customer_review_6a'])
-list.append(['named-entity-recognition', 'customer_review_7a'])
-list.append(['named-entity-recognition', 'customer_review_8a'])
-list.append(['named-entity-recognition', 'customer_review_9a'])
-list.append(['named-entity-recognition', 'customer_review_10a'])
-list.append(['bounding-box','my-test-task-dd367eaf9f08410a899e722c157be4f4'])
-list.append(['bounding-box','my-test-task-1e5c68e74c43419a888def13b60df0e3'])
+list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
+# list.append(['key-phrase-extraction', 'customer_review_1k'])
+# list.append(['key-phrase-extraction', 'customer_review_2k'])
+# list.append(['key-phrase-extraction', 'customer_review_3k'])
+# list.append(['key-phrase-extraction', 'customer_review_4k'])
+list.append(['key-phrase-extraction', 'customer_review_5ke'])
+list.append(['key-phrase-extraction', 'customer_review_6ke'])
+# list.append(['key-phrase-extraction', 'customer_review_7k'])
+# list.append(['key-phrase-extraction', 'customer_review_8k'])
+# list.append(['key-phrase-extraction', 'customer_review_9k'])
+list.append(['key-phrase-extraction', 'customer_review_10ke'])
+# list.append(['named-entity-recognition', 'customer_review_1a'])
+list.append(['named-entity-recognition', 'customer_review_2n'])
+list.append(['named-entity-recognition', 'customer_review_3n'])
+# list.append(['named-entity-recognition', 'customer_review_4n'])
+list.append(['named-entity-recognition', 'customer_review_5n'])
+list.append(['named-entity-recognition', 'customer_review_6n'])
+list.append(['named-entity-recognition', 'customer_review_7n'])
+list.append(['named-entity-recognition', 'customer_review_8n'])
+list.append(['named-entity-recognition', 'customer_review_9n'])
+# list.append(['named-entity-recognition', 'customer_review_10n'])
+
+list.append(['collect-utterance-text','say_something_0d'])
+list.append(['collect-utterance-text','say_something_11c'])
+list.append(['collect-utterance-text','say_something_12a'])
+list.append(['collect-utterance-text','say_something_14a'])
+list.append(['collect-utterance-text','say_something_14d'])
+list.append(['collect-utterance-text','say_something_15b'])
+list.append(['collect-utterance-text','say_something_15c'])
+list.append(['collect-utterance-text','say_something_16d'])
+list.append(['collect-utterance-text','say_something_17c'])
+list.append(['collect-utterance-text','say_something_18a'])
+list.append(['collect-utterance-text','say_something_18c'])
 
 
+with open('text-intent-detection-inputs.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['text-intent-detection', task_name])
 
-# with open('collect-text-utterance-inputs.csv') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         # print("")
-#         # print(row)
-#         task_name = row[0]
-#         list.append(['collect-utterance-text', task_name])
-#
-#
+
 
 for row in list:
     function_name = row[0]
