@@ -54,15 +54,15 @@ list.append(['collect-utterance-text','say_something_18a'])
 list.append(['collect-utterance-text','say_something_18c'])
 
 
-with open('text-intent-detection-inputs.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['text-intent-detection', task_name])
-
-
+# with open('text-intent-detection-inputs.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['text-intent-detection', task_name])
+#
+# 
 
 for row in list:
     function_name = row[0]
