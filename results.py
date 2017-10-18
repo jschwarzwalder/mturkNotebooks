@@ -20,6 +20,7 @@ crowd_client = MTurkCrowdClient(session)
 list = []
 
 list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
+list.append(['facial-detection', 'my-test-task-97040ae55f17498dad6fa5f5da9d4d16'])
 # list.append(['key-phrase-extraction', 'customer_review_1k'])
 # list.append(['key-phrase-extraction', 'customer_review_2k'])
 # list.append(['key-phrase-extraction', 'customer_review_3k'])
@@ -54,14 +55,14 @@ list.append(['collect-utterance-text','say_something_18a'])
 list.append(['collect-utterance-text','say_something_18c'])
 
 
-with open('text-intent-detection-inputs.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['text-intent-detection', task_name])
-
+# with open('text-intent-detection-inputs.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['text-intent-detection', task_name])
+# 
 
 
 for row in list:
