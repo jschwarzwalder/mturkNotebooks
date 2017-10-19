@@ -11,9 +11,9 @@ session = Session(profile_name='mturk-crowd-caller')
 crowd_client = MTurkCrowdClient(session)
 
 # Next, we specify the name of the function to call
-function_name = 'named-entity-recognition'
+function_name = 'co-reference-resolution'
 
-with open('nlp-input-2.csv') as f:
+with open('nlp-input-3.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         print(row)
