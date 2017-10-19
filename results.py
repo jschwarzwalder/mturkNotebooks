@@ -57,34 +57,34 @@ list = []
 
 
 
-with open('NER.csv') as f:
+with open('collect-text-utterance-inputs.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         # print("")
         # print(row)
         task_name = row[0]
-        list.append(['key-phrase-extraction', task_name])
-        list.append(['key-phrase-extraction', task_name + 'k'])
-        list.append(['key-phrase-extraction', task_name + 'ke'])
-        list.append(['named-entity-recognition', task_name])
-        list.append(['named-entity-recognition', task_name + 'a'])
-        list.append(['named-entity-recognition', task_name + 'n'])
-
-with open('nlp-input-1.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['key-phrase-extraction', task_name])
-
-with open('nlp-input-2.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['named-entity-recognition', task_name])
+        list.append(['collect-utterance-text', task_name])
+#         list.append(['key-phrase-extraction', task_name + 'k'])
+#         list.append(['key-phrase-extraction', task_name + 'ke'])
+#         list.append(['named-entity-recognition', task_name])
+#         list.append(['named-entity-recognition', task_name + 'a'])
+#         list.append(['named-entity-recognition', task_name + 'n'])
+#
+# with open('nlp-input-1.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['key-phrase-extraction', task_name])
+#
+# with open('nlp-input-2.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['named-entity-recognition', task_name])
 
 for row in list:
     function_name = row[0]
