@@ -22,8 +22,8 @@ list = []
 # list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
 # list.append(['co-reference-resolution','my-test-task-850e2da9234147b8b0851e5e8bc51ca2'])
 # list.append(['co-reference-resolution', 'my-test-task-4fa8706d75164531839c74813b82b058'])
-# # list.append(['key-phrase-extraction', 'customer_review_1k'])
-# # list.append(['key-phrase-extraction', 'customer_review_2k'])
+list.append(['co-reference-resolution', 'my-test-task-77fc9a6cbaee49d1867c1871f3eb5e8c'])
+list.append(['key-phrase-extraction', 'my-test-task-7f57fd7f17ee47399012f6cd514ee282'])
 # # list.append(['key-phrase-extraction', 'customer_review_3k'])
 # # list.append(['key-phrase-extraction', 'customer_review_4k'])
 # list.append(['key-phrase-extraction', 'customer_review_5ke'])
@@ -32,7 +32,7 @@ list = []
 # # list.append(['key-phrase-extraction', 'customer_review_8k'])
 # # list.append(['key-phrase-extraction', 'customer_review_9k'])
 # list.append(['key-phrase-extraction', 'customer_review_10ke'])
-# # list.append(['named-entity-recognition', 'customer_review_1a'])
+list.append(['named-entity-recognition', 'my-test-task-32433536f6964355944d5b5c5ac69b75'])
 # list.append(['named-entity-recognition', 'customer_review_2n'])
 # list.append(['named-entity-recognition', 'customer_review_3n'])
 # # list.append(['named-entity-recognition', 'customer_review_4n'])
@@ -57,13 +57,13 @@ list = []
 
 
 
-with open('collect-text-utterance-inputs.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['collect-utterance-text', task_name])
+# with open('collect-text-utterance-inputs.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['collect-utterance-text', task_name])
 #         list.append(['key-phrase-extraction', task_name + 'k'])
 #         list.append(['key-phrase-extraction', task_name + 'ke'])
 #         list.append(['named-entity-recognition', task_name])
