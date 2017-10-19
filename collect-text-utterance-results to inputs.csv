@@ -1,0 +1,108 @@
+context,intent,text
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,I'm looking at some other positions and was wondering if you'd mind being one of my references.
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,"I need a reference for the new role that opened up, do you mind?"
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,"I am applying for the new position, would you mind if I put you down as a reference?"
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,"Hi, I'm applying for a position on that awesome team that Meredith is leading. May I put you down as someone who will vouch for how I've performed on this team?"
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,"Hey, could you give me a reference for a promotion? Only if you have the free time."
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,can i put you down as a reference for my new job 
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,Could you  write  a letter  about  my  work behavior  for a  promotion .
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,Would it be okay if I put you down as a reference on my application?
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,Will you be a reference for me when I apply for the new position?
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,Will you be my reference for my job application please.
+They are applying for a new role at their company ,They want to ask a coworker if they will be a reference,Can you  write  a letter  telling  the work  how  well I am  doing ?
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,"Teacher, I've been working hard on my paper, but I need one more day  to include a new source I just got from the library. Can you give me until tomorrow to submit the final version please."
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,"I know the paper's due today, but I need a bit more time."
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,Is it possible to turn my paper in in a few days instead?
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,I was wondering if I could have an extension on that paper.
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,i haven't finished my report can i get an extension 
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,i need an extension because i haven't finished my paper
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,i am struggling with this paper  and  need more time
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,If possible  I need  a  few more days  for  my paper  .
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,I know the paper is due today but I'm not finished could I please have an extension.
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,I know the paper is due today but may I have more time to finish it please.
+"A student in English class. there is a paper due today, but you have not finished it.",They want to ask the teacher for an extension on the due date.,May I have an extension because I haven't finished the paper due today.
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,May I borrow your parents car tonight?
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,"Uh, lemme ask my parents."
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,"Mom, Dad you know how responsible I am. I was hoping you'd let me have the car tonight so I can see a movie with Janet. "
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,can i borrow your parents car tomorrow night
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,i need a car to drive tomorrow night but i don't have a license 
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,Hey Mom  can  I  use your  van  tonight 
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,I know I don't have a driver's license but I would like to borrow the car tonight.
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,May I borrow the car tonight even though I don't have a license.
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,Dan  can I borrow  your   ride  tonight ?
+A teenager has  a driver's liscence but no car,They want to borrow your parents car tonight,May I borrow your car tonight even though I don't have a license.
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,I have a question about my bill.  I think I'm being over charged and I need you to correct it.
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,"My bill is higher than I thought it would be, is there a discount we can work out?"
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,"I want my bill lowered, this is way too much."
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,I can't afford this bill. Can we lower it?
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,I was  overcharged  and  need my  bill  fixed .
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,my bill is way too much for me to pay i need it lowered 
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,i need to lower my bill i cant pay it 
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,My bill was too high this month can you lower it to the normal amount.
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,The bill I got is too high can you lower it to what it normally is.
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,I need this  bill to be  set  to  the  right  amount 
+They received a bill that is higher than expected,They want to get the bill reduced to expected amount,I was  over billed  and need it  to be set  to the  right  amount .
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,Can I keep my phone number if I switch to a new phone company?
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,"If I switch phone companies, do I have to get a new number or?"
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,"Excuse me, if I switch can I keep my old number."
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,I would like to know if I can keep my old phone number when I switch to your company?
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,Can  I keep  all of my  old information  with  a  phone  switch .
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,Is there any way to transfer my old phone number over to my new service?
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,Will I be able to keep my old number with my new service
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,If   I change providers  can I keep my  same  number .
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,What do I need to do to keep my old number?
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,can i keep my old number if i switch 
+Someone is switching to a new phone company.,They want to know if they can keep their old phone number,can i keep my old number if i move to your company 
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,I am not feeling well and would like to have the earliest appointment with the doctor.
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,"Hello, I need to see the doctor as soon as possible. I didn't go into work today, and wondered if  you could squeeze me in today."
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,I'd like an appointment with the doctor ASAP.
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,i don't feel good when can i see the doctor 
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,i need to make an appointment because i am not feeling well 
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,I need to  get in to  see the  doctor  as  soon  as possible .
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,I would like an appointment as soon as possible because I'm not feeling well.
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,What is the soonest appointment I can get because I'm not feeling well.
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,I'm not feeling well so I want an appointment for as soon as possible.
+"They are not feeling well, and call the doctor's office",They want to make an appointment as soon as possible,"I'm not feeling well, how soon can you get me in?"
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,I bought a phone and it doesn't work so I would like to return it.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,"Hi I bought this phone yesterday, but it still won't turn on, even though I charged it overnight. Can I please get a replacement?"
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,My phone isn't working so I just wanna return it.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,I would like to return this phone because it does not work.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,"My phone doesn't want, I want to return it."
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,%5B%7B%22text%22%3A%22I%20bought%20a%20phone%20and%20it%20doesn't%20work%20so%20I%20would%20like%20to%20return%20it.%22%7D%5D
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,I bought my phone recently but it doesn't work. I'd like to return it.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,The phone I just bought doesn't work so I'd like to return it.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,I would like to return my new phone because it doesn't work
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,I need to return this phone. It's broken.
+Someone recently bought a phone and it doesn\'t work,They want to return a phone,the phone doesn't work please take it back
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,"I got this the other day, but it didn't fit me. Can I return it?"
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,"Hi, My husband bought this shirt for me, but it doesn't fit me. Can I get a refund please?"
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,I need to return this shirt.
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,I would like to return the shirt because it does not fit very well.
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,"HI, I bought this shirt here but the size is wrong, can I return it?"
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,the shirt didn't fit i would like to return it
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,I bought a shirt and it didn't fit so I would like to return it.
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,The shirt I just bought doesn't fit and I'd like to return it.
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,%5B%7B%22text%22%3A%22I%20bought%20a%20shirt%20and%20it%20didn't%20fit%20so%20I%20would%20like%20to%20return%20it.%22%7D%5D
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,I need to bring this shirt .
+"Someone bought a shirt, but when they tried it on it didn\'t fit",They want to return the shirt,I bought a shirt but it didn't fit. I would like to return it please.
+They recently moved and call the credit card company,They want to update their address,I need to update my address on file.
+They recently moved and call the credit card company,They want to update their address,"Hello, I am calling to update my mailing address. I've recently moved and didn't see a place online to submit a change of address. "
+They recently moved and call the credit card company,They want to update their address,"Hi, we just moved and we need to update our address."
+They recently moved and call the credit card company,They want to update their address,"Hi, I am calling today to update my address. I recently moved to a new city"
+They recently moved and call the credit card company,They want to update their address,i have moved and i need to give you my new address 
+They recently moved and call the credit card company,They want to update their address,i need to update my mailing address
+They recently moved and call the credit card company,They want to update their address,I moved and want to update my address.
+They recently moved and call the credit card company,They want to update their address,I just moved and want to update my address.
+They recently moved and call the credit card company,They want to update their address,I just moved and need to update my address.
+They recently moved and call the credit card company,They want to update their address,I just moved and  I need to update  my  contact info . 
+They recently moved and call the credit card company,They want to update their address,I recently moved and need to update my address.
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,"My friend is allergic to gluten, do you have anything she can eat?"
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,Would you tell me what gluten free options are available?
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,Can you tell me about your gluten-free options?
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,i am allergic to gluten what should i eat
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,what options are available without gluten
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,What  gluten free  dishes  are  available tonight ?
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,What food options do you have for someone who is allergic to gluten?
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,Do you have any food options that are safe for people who are allergic to gluten?
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,What food options are available for people allergic to gluten.
+"Someone has an allergy to gluten, and looking for a place to eat",You want the waiter to tell food options are available.,Do you have any food options that are safe for people who are allergic to gluten?
