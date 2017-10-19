@@ -19,53 +19,72 @@ crowd_client = MTurkCrowdClient(session)
 
 list = []
 
-list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
-list.append(['co-reference-resolution','my-test-task-850e2da9234147b8b0851e5e8bc51ca2'])
-list.append(['co-reference-resolution', 'my-test-task-4fa8706d75164531839c74813b82b058'])
-# list.append(['key-phrase-extraction', 'customer_review_1k'])
-# list.append(['key-phrase-extraction', 'customer_review_2k'])
-# list.append(['key-phrase-extraction', 'customer_review_3k'])
-# list.append(['key-phrase-extraction', 'customer_review_4k'])
-list.append(['key-phrase-extraction', 'customer_review_5ke'])
-list.append(['key-phrase-extraction', 'customer_review_6ke'])
-# list.append(['key-phrase-extraction', 'customer_review_7k'])
-# list.append(['key-phrase-extraction', 'customer_review_8k'])
-# list.append(['key-phrase-extraction', 'customer_review_9k'])
-list.append(['key-phrase-extraction', 'customer_review_10ke'])
-# list.append(['named-entity-recognition', 'customer_review_1a'])
-list.append(['named-entity-recognition', 'customer_review_2n'])
-list.append(['named-entity-recognition', 'customer_review_3n'])
-# list.append(['named-entity-recognition', 'customer_review_4n'])
-list.append(['named-entity-recognition', 'customer_review_5n'])
-list.append(['named-entity-recognition', 'customer_review_6n'])
-list.append(['named-entity-recognition', 'customer_review_7n'])
-list.append(['named-entity-recognition', 'customer_review_8n'])
-list.append(['named-entity-recognition', 'customer_review_9n'])
-# list.append(['named-entity-recognition', 'customer_review_10n'])
+# list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
+# list.append(['co-reference-resolution','my-test-task-850e2da9234147b8b0851e5e8bc51ca2'])
+# list.append(['co-reference-resolution', 'my-test-task-4fa8706d75164531839c74813b82b058'])
+# # list.append(['key-phrase-extraction', 'customer_review_1k'])
+# # list.append(['key-phrase-extraction', 'customer_review_2k'])
+# # list.append(['key-phrase-extraction', 'customer_review_3k'])
+# # list.append(['key-phrase-extraction', 'customer_review_4k'])
+# list.append(['key-phrase-extraction', 'customer_review_5ke'])
+# list.append(['key-phrase-extraction', 'customer_review_6ke'])
+# # list.append(['key-phrase-extraction', 'customer_review_7k'])
+# # list.append(['key-phrase-extraction', 'customer_review_8k'])
+# # list.append(['key-phrase-extraction', 'customer_review_9k'])
+# list.append(['key-phrase-extraction', 'customer_review_10ke'])
+# # list.append(['named-entity-recognition', 'customer_review_1a'])
+# list.append(['named-entity-recognition', 'customer_review_2n'])
+# list.append(['named-entity-recognition', 'customer_review_3n'])
+# # list.append(['named-entity-recognition', 'customer_review_4n'])
+# list.append(['named-entity-recognition', 'customer_review_5n'])
+# list.append(['named-entity-recognition', 'customer_review_6n'])
+# list.append(['named-entity-recognition', 'customer_review_7n'])
+# list.append(['named-entity-recognition', 'customer_review_8n'])
+# list.append(['named-entity-recognition', 'customer_review_9n'])
+# # list.append(['named-entity-recognition', 'customer_review_10n'])
 
-list.append(['collect-utterance-text','say_something_0d'])
-list.append(['collect-utterance-text','say_something_11c'])
-list.append(['collect-utterance-text','say_something_12a'])
-list.append(['collect-utterance-text','say_something_14a'])
-list.append(['collect-utterance-text','say_something_14d'])
-list.append(['collect-utterance-text','say_something_15b'])
-list.append(['collect-utterance-text','say_something_15c'])
-list.append(['collect-utterance-text','say_something_16d'])
-list.append(['collect-utterance-text','say_something_17c'])
-list.append(['collect-utterance-text','say_something_18a'])
-list.append(['collect-utterance-text','say_something_18c'])
+# list.append(['collect-utterance-text','say_something_0d'])
+# list.append(['collect-utterance-text','say_something_11c'])
+# list.append(['collect-utterance-text','say_something_12a'])
+# list.append(['collect-utterance-text','say_something_14a'])
+# list.append(['collect-utterance-text','say_something_14d'])
+# list.append(['collect-utterance-text','say_something_15b'])
+# list.append(['collect-utterance-text','say_something_15c'])
+# list.append(['collect-utterance-text','say_something_16d'])
+# list.append(['collect-utterance-text','say_something_17c'])
+# list.append(['collect-utterance-text','say_something_18a'])
+# list.append(['collect-utterance-text','say_something_18c'])
 
 
 
-# with open('face-detection-input.csv') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         # print("")
-#         # print(row)
-#         task_name = row[0]
-#         list.append(['facial-detection', task_name])
-#
+with open('NER.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['key-phrase-extraction', task_name])
+        list.append(['key-phrase-extraction', task_name + 'k'])
+        list.append(['key-phrase-extraction', task_name + 'ke'])
+        list.append(['named-entity-recognition', task_name])
+        list.append(['named-entity-recognition', task_name + 'a'])
+        list.append(['named-entity-recognition', task_name + 'n'])
 
+with open('nlp-input-1.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['key-phrase-extraction', task_name])
+
+with open('nlp-input-2.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['named-entity-recognition', task_name])
 
 for row in list:
     function_name = row[0]
