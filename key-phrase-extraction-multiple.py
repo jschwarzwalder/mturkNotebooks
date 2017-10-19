@@ -13,11 +13,11 @@ crowd_client = MTurkCrowdClient(session)
 # Next, we specify the name of the function to call
 function_name = 'key-phrase-extraction'
 
-with open('nlp-input-1.csv') as f:
+with open('NER.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         print(row)
-        task_name = row[0]
+        task_name = row[0] + 'key'
         text = row[1]
 
 

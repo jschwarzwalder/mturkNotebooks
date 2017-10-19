@@ -13,11 +13,11 @@ crowd_client = MTurkCrowdClient(session)
 # Next, we specify the name of the function to call
 function_name = 'co-reference-resolution'
 
-with open('nlp-input-3.csv') as f:
+with open('NER.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         print(row)
-        task_name = row[0]
+        task_name = row[0] + 'c'
         text = row[1]
 
 
