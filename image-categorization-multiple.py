@@ -29,18 +29,25 @@ with open('image-categorization-inputs.csv') as f:
         label5 = 'Sandal'
         label6 = 'Mule'
         label7 = 'Wedge'
+        description1 = 'Closed toe shoe that covers entire foot up to ankle'
+        description2 = 'Closed toe shoe that covers entire foot and leg up to knee'
+        description3 = 'Closed toe shoe that covers foot and has no heel'
+        description4 = 'Open toe shoe that connects to foot through a single strap'
+        description5 = 'Open toe shoe that connects to foot through straps'
+        description6 = 'Closed toe shoe with no back on the heel of wear\'s foot'
+        description7 = 'Heeled shoe where sole is in the form of a wedge'
 
         # Create the task
         put_result = crowd_client.put_task(function_name,
                                            task_name,
                                            {'image': {'url': image_url},
-                                           'categories': [ {'label': label1 },
-                                                           {'label': label2 },
-                                                           {'label': label3 },
-                                                           {'label': label4 },
-                                                           {'label': label5 },
-                                                           {'label': label6 },
-                                                           {'label': label7 }] })
+										    'categories': [ {'label': label1,  'description':  description1 },
+                                                   {'label': label2,  'description':  description2 },
+                                                   {'label': label3,  'description':  description3 },
+                                                   {'label': label4,  'description':  description4 },
+                                                   {'label': label5,  'description':  description5 },
+                                                   {'label': label6,  'description':  description6 },
+                                                   {'label': label7,  'description':  description7 }] })
 
 
         print('PUT response: {}'.format(
