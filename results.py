@@ -78,13 +78,13 @@ list.append(['named-entity-recognition', 'my-test-task-32433536f6964355944d5b5c5
 #         task_name = row[0]
 #         list.append(['key-phrase-extraction', task_name])
 #
-# with open('nlp-input-2.csv') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         # print("")
-#         # print(row)
-#         task_name = row[0]
-#         list.append(['named-entity-recognition', task_name])
+with open('text-intent-detection-inputs.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['text-intent-detection', task_name])
 
 for row in list:
     function_name = row[0]
