@@ -19,7 +19,7 @@ crowd_client = MTurkCrowdClient(session)
 
 list = []
 
-# list.append(['co-reference-resolution','my-test-task-3e7723884f424076a6db5446a0f3a2de'])
+list.append(['image-similarity','my-test-task-9b00bdc5d62b46fca2033f3f5eeb4583'])
 # list.append(['co-reference-resolution','my-test-task-850e2da9234147b8b0851e5e8bc51ca2'])
 # list.append(['co-reference-resolution', 'my-test-task-4fa8706d75164531839c74813b82b058'])
 # list.append(['co-reference-resolution', 'my-test-task-77fc9a6cbaee49d1867c1871f3eb5e8c'])
@@ -78,13 +78,13 @@ list = []
 #         task_name = row[0]
 #         list.append(['key-phrase-extraction', task_name])
 #
-with open('image-categorization-inputs.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['image-categorization', task_name])
+# with open('image-categorization-inputs.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['image-categorization', task_name])
 
 for row in list:
     function_name = row[0]
