@@ -70,14 +70,14 @@ list.append(['image-similarity','my-test-task-9b00bdc5d62b46fca2033f3f5eeb4583']
 #         list.append(['named-entity-recognition', task_name + 'a'])
 #         list.append(['named-entity-recognition', task_name + 'n'])
 #
-# with open('nlp-input-1.csv') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         # print("")
-#         # print(row)
-#         task_name = row[0]
-#         list.append(['key-phrase-extraction', task_name])
-#
+with open('nlp-input-3.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        # print("")
+        # print(row)
+        task_name = row[0]
+        list.append(['co-reference-resolution', task_name])
+
 # with open('image-categorization-inputs.csv') as f:
 #     reader = csv.reader(f)
 #     for row in reader:
