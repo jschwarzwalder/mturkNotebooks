@@ -15,7 +15,7 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-function_name = 'collect-utterance-text'
+function_name = 'collect-utterance-for-intent'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context

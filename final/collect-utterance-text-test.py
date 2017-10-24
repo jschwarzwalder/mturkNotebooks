@@ -15,15 +15,15 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-# In this example, we're first calling the collect-utterance-text-test function.
+# In this example, we're first calling the collect-utterance-for-intent-test function.
 # The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
-# To call the prod collect-utterance-text function, uncomment the next line and comment out the collect-utterance-text-test line
-# function_name = 'collect-utterance-text'
-function_name = 'collect-utterance-text-test'
+# To call the prod collect-utterance-text function, uncomment the next line and comment out the collect-utterance-for-intent-test line
+# function_name = 'collect-utterance-for-intent'
+function_name = 'collect-utterance-for-intent-test'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
-context = 'They recieved a bill that is higher than expected'
+context = 'They received a bill that is higher than expected'
 
 # and an  intention, for situation.
 intent = 'They want to get bill reduced to expected amount'
@@ -43,7 +43,8 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
+# Since we are running a test, this sill return demo results.
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
-{'status_code': get_result.status_code, 'task': get_result.json()}))
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))
