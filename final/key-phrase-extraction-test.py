@@ -41,4 +41,4 @@ print('PUT response: {}'.format(
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
-{'status_code': get_result.status_code, 'task': get_result.json()}))
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))

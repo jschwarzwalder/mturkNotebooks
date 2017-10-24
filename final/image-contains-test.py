@@ -27,7 +27,7 @@ image_url = 'https://www.mturk.com/media/butterbean.jpg'
 # The type of thing we're looking for
 label = 'dog'
 
-# Create the task              
+# Create the task
 put_result = crowd_client.put_task(function_name,
                                    task_name,
                                    {'image': {'url': image_url}, 'target': {'label': label} })
@@ -35,10 +35,10 @@ put_result = crowd_client.put_task(function_name,
 print('PUT response: {}'.format(
     {'status_code': put_result.status_code, 'task': put_result.json()}))
 
-           
+
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
 get_result = crowd_client.get_task(function_name, task_name)
 
-print('GET response: {}'.format(                     
-{'status_code': get_result.status_code, 'task': get_result.json()}))
+print('GET response: {}'.format(
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))

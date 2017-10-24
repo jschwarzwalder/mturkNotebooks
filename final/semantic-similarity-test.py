@@ -25,7 +25,7 @@ function_name = 'semantic-similarity-test'
 text1 = 'The sky is blue.'
 text2 = 'The sky was the color of blue.'
 
-# Create the task              
+# Create the task
 put_result = crowd_client.put_task(function_name,
                                    task_name,
                                    {'text1': text1, 'text2': text2})
@@ -34,10 +34,10 @@ print('PUT response: {}'.format(
     {'status_code': put_result.status_code, 'task': put_result.json()}))
 
 
-           
+
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
 get_result = crowd_client.get_task(function_name, task_name)
 
-print('GET response: {}'.format(                     
-    {'status_code': get_result.status_code, 'task': get_result.json()}))
+print('GET response: {}'.format(
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))
