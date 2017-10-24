@@ -36,6 +36,7 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
+# Since we are running a test, this will return mock results. 
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
