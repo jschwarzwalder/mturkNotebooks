@@ -15,23 +15,21 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-# In this example, we're first calling the text-intent-detection-test function.
+# In this example, we're first calling the intent-detection-test function.
 # The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
-# To call the prod text-intent-detection function, uncomment the next line and comment out the text-intent-detection-test line
-# function_name = 'text-intent-detection'
-function_name = 'text-intent-detection-test'
+# To call the prod intent-detection function, uncomment the next line and comment out the intent-detection-test line
+# function_name = 'intent-detection'
+function_name = 'intent-detection-test'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
-text = 'The secret of getting ahead is getting started.'
+text = 'my son was stung by bees and I need to know if I need to go to the ER.'
 
 # and an  intention, for worker to select.
-intents = [{'label': 'Business'},
-            {'label': 'Art'},
-            {'label': 'Friendship'},
-            {'label': 'Life'},
-            {'label': 'Love'},
-            {'label': 'Wisdom'}]
+intents = [{'label': 'Schedule an appointment', 'description': 'example: I need to make an appointment with Dr. Smith'},
+            {'label': 'Medical Record Request', 'description': 'example: I need a copy of my kids’ immunization records'}]
+
+
 
 
 
@@ -48,7 +46,8 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
+# Since we are running a test, this sill return demo results.
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
-{'status_code': get_result.status_code, 'task': get_result.json()}))
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))

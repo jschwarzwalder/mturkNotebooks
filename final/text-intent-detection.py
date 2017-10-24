@@ -15,19 +15,15 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-function_name = 'text-intent-detection'
+function_name = 'intent-detection'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
-text = 'The secret of getting ahead is getting started.'
+text = 'my son was stung by bees and I need to know if I need to go to the ER.'
 
 # and an  intention, for worker to select.
-intents = [{'label': 'Business'},
-            {'label': 'Art'},
-            {'label': 'Friendship'},
-            {'label': 'Life'},
-            {'label': 'Love'},
-            {'label': 'Wisdom'}]
+intents = [{'label': 'Schedule an appointment', 'description': 'example: I need to make an appointment with Dr. Smith'},
+            {'label': 'Medical Record Request', 'description': 'example: I need a copy of my kids’ immunization records'}]
 
 
 
