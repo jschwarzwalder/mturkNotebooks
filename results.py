@@ -49,13 +49,13 @@ list.append(['text-categorization-test','my-test-task-8330f9ae6243409caf869594d6
 #         list.append(['named-entity-recognition', task_name + 'a'])
 #         list.append(['named-entity-recognition', task_name + 'n'])
 #
-with open('nlp-input-3.csv') as f:
-    reader = csv.reader(f)
-    for row in reader:
-        # print("")
-        # print(row)
-        task_name = row[0]
-        list.append(['co-reference-resolution', task_name])
+# with open('nlp-input-3.csv') as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         # print("")
+#         # print(row)
+#         task_name = row[0]
+#         list.append(['co-reference-resolution', task_name])
 
 # with open('image-categorization-inputs.csv') as f:
 #     reader = csv.reader(f)

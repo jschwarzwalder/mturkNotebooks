@@ -1,0 +1,38 @@
+
+GET response: {'status_code': 200, 'api_name': 'intent-detection-test', 'task': {'input': {'intents': [{'description': 'example: I need to make an appointment with Dr. Smith', 'label': 'Schedule an appointment'}, {'description': 'example: I need a copy of my kids’ immunization records', 'label': 'Medical Record Request'}], 'text': 'my son was stung by bees and I need to know if I need to go to the ER.'}, 'problemDetails': None, 
+'result': {'matches': [{'label': 'Schedule an appointment'}]}, 'state': 'completed', 'taskName': 'my-test-task-f8ee4fcb0c3849f3a5a78c143ce1157d'}}
+
+GET response: {'status_code': 200, 'api_name': 'bounding-box-test', 'task': {'input': {'image': {'url': 'https://requester.mturk.com/assets/jubal.jpg'}, 'labels': [{'label': 'glasses'}]}, 'problemDetails': None, 
+'result': {'annotations': [{'boundingBox': {'height': 69, 'left': 340, 'top': 370, 'width': 206}, 'label': 'car'}, {'boundingBox': {'height': 25, 'left': 250, 'top': 300, 'width': 122}, 'label': 'person'}]}, 'state': 'completed', 'taskName': 'my-test-task-80c4d16d84eb4b5b9558c8857d70ce62'}}
+
+GET response: {'status_code': 500, 'api_name': 'collect-utterance-for-intent-test', 'task': {'message': 'Internal Server Error'}}
+
+GET response: {'status_code': 200, 'api_name': 'coreference-resolution-test', 'task': {'input': {'text': 'For the home or professional bread-maker, this is the book . It comes from a man many consider to be the best bread baker in the United States: Chad Robertson, co-owner of Tartine Bakery in San Francisco, a city that knows its bread. To him, bread is the foundation of a meal, the center of daily life, and each loaf tells the story of the baker who shaped it. He developed his unique bread over two decades of apprenticeship with the finest artisan bakers in France and the United States, as well as experimentation in his own ovens. Readers will be astonished at how elemental it is. A hundred photographs from years of testing, teaching, and recipe development provide step-by-step inspiration, while additional recipes provide inspiration for using up every delicious morsel.'}, 'problemDetails': None, 
+'result': {'coreferences': [{'references': [{'span': {'end': 9, 'start': 0, 'text': 'Starbucks'}}, {'span': {'end': 30, 'start': 22, 'text': 'the cafe'}}]}, {'references': [{'span': {'end': 12, 'start': 10, 'text': 'He'}}, {'span': {'end': 45, 'start': 43, 'text': 'he'}}, {'span': {'end': 42, 'start': 35, 'text': 'Johnson'}}]}]}, 'state': 'completed', 'taskName': 'my-test-task-379e8ca2e09c40a4b75ed7ad2483053a'}}
+
+GET response: {'status_code': 200, 'api_name': 'emotion-detection-test', 'task': {'input': {'text': 'First time ever winning all three fantasy leagues AND @Seahawks win!'}, 'problemDetails': None, 
+'result': {'emotion': 'surprise'}, 'state': 'completed', 'taskName': 'my-test-task-7c616098a3f44704958f8d11279d1f87'}}
+
+GET response: {'status_code': 200, 'api_name': 'image-categorization-test', 'task': {'input': {'categories': [{'description': 'multicellular photosynthetic eukaryotes often refered to as green plants.', 'label': 'Plant'}, {'description': 'multicellular biological eukaryotes which includes vertebrates like fish, reptitles, birds and mammels, and invertebrates like worms and fruit flies.', 'label': 'Animal'}, {'description': 'small prokaryotic microorganisms about a few micrometers in length.', 'label': 'Bacteria'}, {'description': 'eukayotic organisms such as yeasts and molds.', 'label': 'Fungi'}, {'description': 'unicellular eukayotic organisms that often cluster together.', 'label': 'Protists'}], 'image': {'url': 'https://requester.mturk.com/assets/simon.jpg'}}, 'problemDetails': None, 
+'result': {'matches': [{'label': 'Fungi'}]}, 'state': 'completed', 'taskName': 'my-test-task-a1485055dfab4adf984de70b88778ca1'}}
+
+GET response: {'status_code': 200, 'api_name': 'image-contains-test', 'task': {'input': {'image': {'url': 'https://www.mturk.com/media/butterbean.jpg'}, 'target': {'label': 'dog'}}, 'problemDetails': None, 
+'result': {'containsTarget': True}, 'state': 'completed', 'taskName': 'my-test-task-8fc5acff3dbb4c988a5ba8803d5f57a8'}}
+
+GET response: {'status_code': 200, 'api_name': 'image-similarity-test', 'task': {'input': {'image1': {'url': 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-a1.jpg'}, 'image2': {'url': 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-g1.png'}}, 'problemDetails': None, 
+'result': {'similarityScore': 0.25}, 'state': 'completed', 'taskName': 'my-test-task-e67b5a9c86d74287bbab305d1132292e'}}
+
+GET response: {'status_code': 200, 'api_name': 'key-phrase-extraction-test', 'task': {'input': {'text': 'I love this album. I especially like Peter\'s version of "The Parting Glass" and his collaboration with Jackie Evancho on "Hallelujah".'}, 'problemDetails': None, 
+'result': {'keyPhrases': [{'end': 9, 'start': 0, 'text': 'Starbucks'}, {'end': 33, 'start': 22, 'text': 'Seattle, WA'}]}, 'state': 'completed', 'taskName': 'my-test-task-f20c954faa0f41f4a8f9ea3b4a824e58'}}
+
+GET response: {'status_code': 200, 'api_name': 'named-entity-recognition-test', 'task': {'input': {'text': 'The Grammys nominated The Chainsmokers for Best New Artist for simply repeating "We ain\'t ever gettin older"'}, 'problemDetails': None, 
+'result': {'entities': [{'span': {'end': 27, 'start': 15, 'text': 'US Bank Arena'}, 'type': 'location'}, {'span': {'end': 44, 'start': 30, 'text': 'Michael Jackson'}, 'type': 'person'}]}, 'state': 'completed', 'taskName': 'my-test-task-b87bacdffded4b92bb22b3a8a21596dd'}}
+
+GET response: {'status_code': 200, 'api_name': 'semantic-similarity-test', 'task': {'input': {'text1': 'The sky is blue.', 'text2': 'The sky was the color of blue.'}, 'problemDetails': None, 
+'result': {'similarityScore': 1.0}, 'state': 'completed', 'taskName': 'my-test-task-cd20cc01ba0845e7befddd0225b20f55'}}
+
+GET response: {'status_code': 200, 'api_name': 'sentiment-analysis-test', 'task': {'input': {'text': 'Everything is wonderful.'}, 'problemDetails': None, 
+'result': {'sentiment': 'neutral'}, 'state': 'completed', 'taskName': 'my-test-task-ecea9113de1948f78a0091f1c891de89'}}
+
+GET response: {'status_code': 200, 'api_name': 'text-categorization-test', 'task': {'input': {'categories': [{'description': 'Animal based but also includes eggs, soy, beans, and legumes.', 'label': 'Protein'}, {'description': 'Grow on trees or plants and often high in sugary carbohydrates.', 'label': 'Fruit'}, {'description': 'Grown in the ground or on a plant including the roots or leaves.', 'label': 'Vegetable'}, {'description': 'Milk based products', 'label': 'Dairy'}, {'description': 'Carbohydrates including wheat, rice, oats, barley, bread, and pasta', 'label': 'Grain'}], 'text': 'Banana'}, 'problemDetails': None, 
+'result': {'matches': [{'label': 'Vegetable'}]}, 'state': 'completed', 'taskName': 'my-test-task-8330f9ae6243409caf869594d668e727'}}
