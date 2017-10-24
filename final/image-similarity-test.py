@@ -22,8 +22,8 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 function_name = 'image-similarity-test'
 
 # The text we want to compare
-image1 = 'https://requester.mturk.com/assets/lucy.jpg'
-image2 = 'https://requester.mturk.com/assets/gold-finding-puppy.jpg'
+image1 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-a1.jpg'
+image2 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-g1.png'
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
@@ -37,7 +37,8 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
+# Since we are running a test, this sill return demo results.
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
-    {'status_code': get_result.status_code, 'task': get_result.json()}))
+{'api-name': function_name, 'note': 'SAMPLE RESULTS ONLY', 'status_code': get_result.status_code, 'task': get_result.json()}))

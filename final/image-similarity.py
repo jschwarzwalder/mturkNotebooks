@@ -15,17 +15,12 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-# In this example, we're first calling the image-similarity function which requires you to have prepurchased HITs to cover worker and mturk fees.
-# The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
-# However test function will return random sample results so can not be used beyond validating.
-#
-# If you want to use the test image-similarity function, uncomment the next line and comment out the image-similarity line
-# function_name = 'image-similarity-test'
 function_name = 'image-similarity'
 
 # The text we want to compare
 image1 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-a1.jpg'
 image2 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-g1.png'
+
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
@@ -33,13 +28,13 @@ put_result = crowd_client.put_task(function_name,
                                    {'image1': {'url': image1}, 'image2': {'url': image2}})
 
 print('PUT response: {}'.format(
-    {'api': function_name, 'status_code': put_result.status_code, 'task': put_result.json()}))
+    {'status_code': put_result.status_code, 'task': put_result.json()}))
 
 
 
-# Get the task we just created. Note that since workers need to complete the task,
-# we'd have to poll periodically until the task is submitted.
+# Get the task we just created. Note that for a prod (i.e., non-test) task,
+# we'd have to poll periodically until the task completed.
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
-    {'api': function_name, 'status_code': get_result.status_code, 'task': get_result.json()}))
+    {'status_code': get_result.status_code, 'task': get_result.json()}))
