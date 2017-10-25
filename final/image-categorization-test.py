@@ -22,29 +22,64 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 function_name = 'image-categorization-test'
 
 # The image we want labeled
-image_url = 'https://requester.mturk.com/assets/simon.jpg'
+image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1m.png'
 
 # The type of thing we're looking for
-label1 = 'Plant'
-description1 =  'multicellular photosynthetic eukaryotes often refered to as green plants.'
-label2 = 'Animal'
-description2 =  'multicellular biological eukaryotes which includes vertebrates like fish, reptitles, birds and mammels, and invertebrates like worms and fruit flies.'
-label3 = 'Bacteria'
-description3 =  'small prokaryotic microorganisms about a few micrometers in length.'
-label4 = 'Fungi'
-description4 =  'eukayotic organisms such as yeasts and molds.'
-label5 = 'Protists'
-description5 =  'unicellular eukayotic organisms that often cluster together.'
+# Descriptions amd example images are optional, but help guide the worker.
+label1 = 'Ankle Boot'
+label2 = 'Knee High Boot'
+label3 = 'Ballet Flats'
+label4 = 'Flip Flops'
+label5 = 'Sandal'
+label6 = 'Mule'
+label7 = 'Wedge'
+description1 = 'Closed toe shoe that covers entire foot up to ankle'
+description2 = 'Closed toe shoe that covers entire foot and leg up to knee'
+description3 = 'Closed toe shoe that covers foot and has no heel'
+description4 = 'Open toe shoe that connects to foot through a single strap'
+description5 = 'Open toe shoe that connects to foot through straps'
+description6 = 'Closed toe shoe with no back on the heel of wear\'s foot'
+description7 = 'Heeled shoe where sole is in the form of a wedge'
+example1_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1d.jpg'
+example2_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1z.jpg'
+example3_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1dd.png'
+example4_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1b.png'
+example5_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1r.png'
+example6_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1x.png'
+example7_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1l.png'
+example1b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1i.jpg'
+example2b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1f.jpg'
+example3b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1y.png'
+example4b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1l.jpg'
+example5b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1q.jpg'
+example6b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1t.png'
+example7b_image_url = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-1i.png'
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
                                    task_name,
                                    {'image': {'url': image_url},
-                                   'categories': [ {'label': label1,  'description':  description1 },
-                                                   {'label': label2,  'description':  description2 },
-                                                   {'label': label3,  'description':  description3 },
-                                                   {'label': label4,  'description':  description4 },
-                                                   {'label': label5,  'description':  description5 }] })
+                                   'categories': [ {'label': label1,  'description':  description1 ,
+                                                    'positiveExamples': [{'image': {'url': example1_image_url}}] ,
+                                                    'negativeExamples': [{'image': {'url': example1b_image_url}}] },
+                                                   {'label': label2,  'description':  description2,
+                                                    'positiveExamples': [{'image': {'url': example2_image_url}}] ,
+                                                    'negativeExamples': [{'image': {'url': example2b_image_url}}]  },
+                                                   {'label': label3,  'description':  description3,
+                                                    'positiveExamples': [{'image': {'url': example3_image_url}}] ,
+                                                    'negativeExamples': [{'image': {'url': example3b_image_url}}]  },
+                                                   {'label': label4,  'description':  description4,
+                                                    'positiveExamples': [{'image': {'url': example4_image_url}}] ,
+                                                    'negativeExamples': [{'image': {'url': example4b_image_url}}]  },
+                                                   {'label': label5,  'description':  description5,
+                                                      'positiveExamples': [{'image': {'url': example5_image_url}}] ,
+                                                      'negativeExamples': [{'image': {'url': example5b_image_url}}]  },
+                                                   {'label': label6,  'description':  description6,
+                                                      'positiveExamples': [{'image': {'url': example6_image_url}}] ,
+                                                      'negativeExamples': [{'image': {'url': example6b_image_url}}]  },
+                                                   {'label': label7,  'description':  description7,
+                                                    'positiveExamples': [{'image': {'url': example7_image_url}}] ,
+                                                    'negativeExamples': [{'image': {'url': example7b_image_url}}]  }] })
 
 print('PUT response: {}'.format(
     {'status_code': put_result.status_code, 'task': put_result.json()}))
