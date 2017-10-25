@@ -18,7 +18,7 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 function_name = 'coreference-resolution'
 
 # We ask the worker to find all expressions that refer to the same entity in a text
-text = 'For the home or professional bread-maker, this is the book . It comes from a man many consider to be the best bread baker in the United States: Chad Robertson, co-owner of Tartine Bakery in San Francisco, a city that knows its bread. To him, bread is the foundation of a meal, the center of daily life, and each loaf tells the story of the baker who shaped it. He developed his unique bread over two decades of apprenticeship with the finest artisan bakers in France and the United States, as well as experimentation in his own ovens. Readers will be astonished at how elemental it is. A hundred photographs from years of testing, teaching, and recipe development provide step-by-step inspiration, while additional recipes provide inspiration for using up every delicious morsel.'
+text = 'Megan said "I voted for Hilary because she better aligns with my values'
 
 
 # Create the task
