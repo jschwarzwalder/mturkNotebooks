@@ -19,15 +19,14 @@ function_name = 'text-categorization'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
-text = 'Banana'
+text = 'These are great. They do run a touch small. I almost could go a half size up from my normal size.'
 
 # and an  intention, for worker to select.
 # Descriptions are optional, but help guide the worker
-categories = [{'label': 'Protein' , 'description' : 'Animal based but also includes eggs, soy, beans, and legumes.'},
-            {'label': 'Fruit', 'description': 'Grow on trees or plants and often high in sugary carbohydrates.' },
-            {'label': 'Vegetable', 'description': 'Grown in the ground or on a plant including the roots or leaves.'},
-            {'label': 'Dairy', 'description': 'Milk based products'},
-            {'label': 'Grain', 'description': 'Carbohydrates including wheat, rice, oats, barley, bread, and pasta'} ]
+categories = [{'label': 'Style' , 'description' : 'Customer mentions apperance or style of item.'},
+            {'label': 'Fit', 'description': 'Customer mentions the cut or fit of item.' },
+            {'label': 'Quality', 'description': 'Customer mentions the material or quality of item.'},
+            {'label': 'Price', 'description': 'Customer mentiones the cost or price of item.'}]
 
 
 
