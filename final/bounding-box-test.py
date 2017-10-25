@@ -22,11 +22,11 @@ task_name = 'my-test-task-' + uuid.uuid4().hex
 function_name = 'bounding-box-test'
 
 # The image we want labeled
-image_url = 'https://requester.mturk.com/assets/jubal.jpg'
+image_url = 'https://sierra-videos.s3.amazonaws.com/2017_0521/DJI_0001_frames_720h/1495411174030000000.jpg'
 
 # The type of thing we're ask workers to find in image
 # You can ask workers to label multiple types of things if needed.
-label = 'glasses'
+label = 'car'
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
@@ -39,7 +39,7 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
-# Since we are running a test, this will return mock results. 
+# Since we are running a test, this will return mock results.
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
