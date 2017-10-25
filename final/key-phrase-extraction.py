@@ -19,8 +19,7 @@ function_name = 'key-phrase-extraction'
 
 # We ask the worker to label the entities in some some text
 # (companies, events, locations, organizations, people, quantities)
-text = 'Android/Windows guy... Your statement completely undermines the concept of "user experience." Apple advanced UX by decades.'
-
+text = 'I love this album. I especially like Peter\'s version of "The Parting Glass" and his collaboration with Jackie Evancho on "Hallelujah".'
 
 # Create the task
 put_result = crowd_client.put_task(function_name,
