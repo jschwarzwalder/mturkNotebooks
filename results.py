@@ -36,6 +36,8 @@ list.append(['image-contains-test','my-test-task-8fc5acff3dbb4c988a5ba8803d5f57a
 list.append(['image-similarity-test','my-test-task-e67b5a9c86d74287bbab305d1132292e'])
 list.append(['intent-detection-test','my-test-task-f8ee4fcb0c3849f3a5a78c143ce1157d'])
 list.append(['intent-detection', 'my-test-task-090e1a5b741a4736b15500a4b31598c5'])
+list.append(['intent-detection-test','my-test-task-68459b1eb22b4827a9eff10cebbb104b'])
+list.append(['intent-detection', 'my-test-task-6fae27f64ede4cefbb71c633ba4049a7'])
 list.append(['key-phrase-extraction-test','my-test-task-f20c954faa0f41f4a8f9ea3b4a824e58'])
 list.append(['key-phrase-extraction','my-test-task-385989de574a4f7fa750703b923d8296'])
 list.append(['named-entity-recognition-test','my-test-task-b87bacdffded4b92bb22b3a8a21596dd'])
@@ -46,8 +48,8 @@ list.append(['sentiment-analysis-test','my-test-task-ecea9113de1948f78a0091f1c89
 list.append(['sentiment-analysis','my-test-task-ab81e08e1f9343738b0a10663b2ae3c7'])
 list.append(['text-categorization-test','my-test-task-8330f9ae6243409caf869594d668e727'])
 list.append(['text-categorization','my-test-task-f65d5ee942ca4174b7b8c99e61e54278'])
-
-
+list.append(['text-categorization-test','my-test-task-e6c135a5d159443e9fd1fbc6e63f0160'])
+list.append(['text-categorization','my-test-task-90775c1de67e40159abcfea31c10b79c'])
 
 
 
