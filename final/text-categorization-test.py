@@ -23,17 +23,22 @@ function_name = 'text-categorization-test'
 
 # We ask the worker to provide text for what to say in a specific situation.
 # Given a context
-text = 'Banana'
+text = 'These are great. They do run a touch small. I almost could go a half size up from my normal size.'
 
 # and an  intention, for worker to select.
-# Descriptions are optional, but help guide the worker
-categories = [{'label': 'Protein' , 'description' : 'Animal based but also includes eggs, soy, beans, and legumes.'},
-            {'label': 'Fruit', 'description': 'Grow on trees or plants and often high in sugary carbohydrates.' },
-            {'label': 'Vegetable', 'description': 'Grown in the ground or on a plant including the roots or leaves.'},
-            {'label': 'Dairy', 'description': 'Milk based products'},
-            {'label': 'Grain', 'description': 'Carbohydrates including wheat, rice, oats, barley, bread, and pasta'} ]
-
-
+# Descriptions, positiveExamples, and negativeExamples are optional, but help guide the worker
+categories = [{'label': 'Style' , 'description' : 'Customer mentions apperance or style of item.',
+                'positiveExamples':  [{'text': 'Not the color I ordered' },{'text': 'No longer in season'}],
+                'negativeExamples': [{'text':'Too large' },{'text': 'Fabric was too thin'}] },
+            {'label': 'Fit', 'description': 'Customer mentions the cut or fit of item.',
+                'positiveExamples':  [{'text': 'This was too short.' },{'text': 'Doesn\'t work for my body type.'}],
+                'negativeExamples': [{'text':'I don\'t like the baggy look' },{'text': 'Neckline is too low cut'}]},
+            {'label': 'Quality', 'description': 'Customer mentions the material or quality of item.',
+                'positiveExamples':  [{'text': 'Seams are not reinforced.' },{'text': 'Fabric has a low thread count.'}],
+                'negativeExamples': [{'text':'Too expensive for what I recieved' },{'text': 'Seams ripped when I tried it on'}]},
+            {'label': 'Price', 'description': 'Customer mentiones the cost or price of item.',
+                'positiveExamples':  [{'text': 'This is not worth the price' },{'text': 'The price was so great I ordered four and return the ones I don\'t like'}],
+                'negativeExamples': [{'text':'I would not recommend anyone to purchase' },{'text': 'Craftmanship is too cheap'}]}]
 
 
 # Create the task
