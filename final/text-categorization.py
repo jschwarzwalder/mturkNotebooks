@@ -24,7 +24,7 @@ text = 'These are great. They do run a touch small. I almost could go a half siz
 # and an  intention, for worker to select.
 # Note only label is required.
 # Descriptions amd examples are optional, but help guide the worker.
-categories = [{'label': 'Style' , 'description' : 'Customer mentions apperance or style of item.',
+categories = [{'label': 'Style' , 'description' : 'Customer mentions appearance or style of item.',
                 'positiveExamples':  [{'text': 'Not the color I ordered' },{'text': 'No longer in season'}],
                 'negativeExamples': [{'text':'Too large' },{'text': 'Fabric was too thin'}] },
             {'label': 'Fit', 'description': 'Customer mentions the cut or fit of item.',
