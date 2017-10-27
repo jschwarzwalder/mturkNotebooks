@@ -26,7 +26,8 @@ function_name = 'intent-detection-test'
 text = 'my son was stung by bees and I need to know if I need to go to the ER.'
 
 # and an  intention, for worker to select.
-# description, positiveExamples and negativeExamples are all optional.
+# Note only label is required.
+# Descriptions amd examples are optional, but help guide the worker.
 intents = [{'label': 'Schedule an appointment', 'description': 'Caller expresses an intent to visit with health care professional',
             'positiveExamples':  [{'text': 'I need to make an appointment with Dr. Smith' },{'text': 'Can the doctor see me today?'}],
             'negativeExamples': [{'text':'Do you sell burritos?' },{'text': 'Do you accept credit cards?'}] } ,

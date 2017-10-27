@@ -22,7 +22,8 @@ function_name = 'text-categorization'
 text = 'These are great. They do run a touch small. I almost could go a half size up from my normal size.'
 
 # and an  intention, for worker to select.
-# Descriptions are optional, but help guide the worker
+# Note only label is required.
+# Descriptions amd examples are optional, but help guide the worker.
 categories = [{'label': 'Style' , 'description' : 'Customer mentions apperance or style of item.',
                 'positiveExamples':  [{'text': 'Not the color I ordered' },{'text': 'No longer in season'}],
                 'negativeExamples': [{'text':'Too large' },{'text': 'Fabric was too thin'}] },
