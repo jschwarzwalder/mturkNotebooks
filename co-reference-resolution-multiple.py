@@ -11,7 +11,7 @@ session = Session(profile_name='mturk-crowd-caller')
 crowd_client = MTurkCrowdClient(session)
 
 # Next, we specify the name of the function to call
-function_name = 'co-reference-resolution'
+function_name = 'coreference-resolution'
 
 with open('NER.csv') as f:
     reader = csv.reader(f)

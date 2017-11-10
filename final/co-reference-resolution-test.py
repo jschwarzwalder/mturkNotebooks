@@ -15,18 +15,17 @@ crowd_client = MTurkCrowdClient(session)
 task_name = 'my-test-task-' + uuid.uuid4().hex
 
 # Next, we specify the name of the function to call
-# In this example, we're first calling the co-reference-resolution-test function.
+# In this example, we're first calling the coreference-resolution-test function.
 # The test function doesn't cost any money and is useful for validating that your account is setup correctly and for testing your integration.
-# To call the prod co-reference-resolution function, uncomment the next line and comment out the co-reference-resolution-test line
-# function_name = 'co-reference-resolution'
+# To call the prod coreference-resolution function, uncomment the next line and comment out the coreference-resolution-test line
+# function_name = 'coreference-resolution'
 function_name = 'coreference-resolution-test'
 
 # We ask the worker to find all expressions that refer to the same entity in a text
-text = 'Megan said "I voted for Hilary because she better aligns with my values'
-
+text = 'Megan said "I voted for Hilary because she better aligns with my values"'
 
 # Create the task
-put_result = crowd_client.put_task(function_name,s
+put_result = crowd_client.put_task(function_name,
                                    task_name,
                                    {'text': text,})
 
@@ -37,7 +36,7 @@ print('PUT response: {}'.format(
 
 # Get the task we just created. Note that for a prod (i.e., non-test) task,
 # we'd have to poll periodically until the task completed.
-# Since we are running a test, this will return mock results. s
+# Since we are running a test, this will return mock results. 
 get_result = crowd_client.get_task(function_name, task_name)
 
 print('GET response: {}'.format(
